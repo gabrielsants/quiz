@@ -22,8 +22,7 @@ This is a project done in Angular (11) and Spring Boot (Java 8) to simulate a qu
 
 ## Support
 
-This app use MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
+This app use MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers.
 ## Stay in touch
 
 - Author  - [Gabriel Santos](https://www.linkedin.com/in/dev-gabriel-santos/)
@@ -31,4 +30,4 @@ This app use MIT-licensed open source project. It can grow thanks to the sponsor
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This app is [MIT licensed](LICENSE).
