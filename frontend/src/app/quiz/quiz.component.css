@@ -1,0 +1,13 @@
+.card-quiz {
+    max-width: 600px;
+}
+  
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    margin: 0 10px;
+}
+

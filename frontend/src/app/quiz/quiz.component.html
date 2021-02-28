@@ -1,0 +1,175 @@
+<br>
+
+<div *ngIf="!startQuiz" class="center">
+  <mat-card class="card-quiz">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+      <mat-card-subtitle>Are you a Jedi?</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://www.comunitas.org/wp-content/uploads/2019/07/QUIZ.jpg"
+      alt="Photo from comunitas.org">
+    <mat-card-content>
+      <p>
+        Try this quiz about javascript programming concepts and get your skill level
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="center">
+      <button mat-button (click)="beguinTheGame()">START GAME</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div *ngIf="startQuiz && inProgress == 0" class="center">
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <form [formGroup]="form" (ngSubmit)="nextQuestion(0)">
+        <label>{{getQuestion(0).question}}</label>
+
+        <mat-radio-group formControlName="answer"> <br>
+          <mat-radio-button value=1>{{getQuestion(0).affirmation1}}</mat-radio-button> <br>
+          <mat-radio-button value=2>{{getQuestion(0).affirmation2}}</mat-radio-button> <br>
+          <mat-radio-button value=3>{{getQuestion(0).affirmation3}}</mat-radio-button> <br>
+        </mat-radio-group>
+
+
+        <button mat-button>NEXT</button> <button mat-button (click)="resetAll()">QUIT</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="inProgress == 1" class="center">
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <form [formGroup]="form" (ngSubmit)="nextQuestion(1)">
+        <label>{{getQuestion(1).question}}</label>
+
+        <mat-radio-group formControlName="answer"> <br>
+          <mat-radio-button value=1>{{getQuestion(1).affirmation1}}</mat-radio-button> <br>
+          <mat-radio-button value=2>{{getQuestion(1).affirmation2}}</mat-radio-button> <br>
+          <mat-radio-button value=3>{{getQuestion(1).affirmation3}}</mat-radio-button> <br>
+        </mat-radio-group>
+
+
+        <button mat-button>NEXT</button> <button mat-button (click)="resetAll()">QUIT</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div *ngIf="inProgress ==2" class="center">
+  <mat-card >
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <form [formGroup]="form" (ngSubmit)="nextQuestion(2)">
+        <label>{{getQuestion(2).question}}</label>
+
+        <mat-radio-group formControlName="answer"> <br>
+          <mat-radio-button value=1>{{getQuestion(2).affirmation1}}</mat-radio-button> <br>
+          <mat-radio-button value=2>{{getQuestion(2).affirmation2}}</mat-radio-button> <br>
+          <mat-radio-button value=3>{{getQuestion(2).affirmation3}}</mat-radio-button> <br>
+        </mat-radio-group>
+
+
+        <button mat-button>NEXT</button> <button mat-button (click)="resetAll()">QUIT</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div *ngIf="inProgress == 3" class="center">
+  <mat-card >
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <form [formGroup]="form" (ngSubmit)="nextQuestion(3)">
+        <label>{{getQuestion(3).question}}</label>
+
+        <mat-radio-group formControlName="answer"> <br>
+          <mat-radio-button value=1>{{getQuestion(3).affirmation1}}</mat-radio-button> <br>
+          <mat-radio-button value=2>{{getQuestion(3).affirmation2}}</mat-radio-button> <br>
+          <mat-radio-button value=3>{{getQuestion(3).affirmation3}}</mat-radio-button> <br>
+        </mat-radio-group>
+
+
+        <button mat-button>NEXT</button> <button mat-button (click)="resetAll()">QUIT</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div *ngIf="inProgress == 4" class="center">
+  <mat-card >
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+
+      <form [formGroup]="form" (ngSubmit)="nextQuestion(4)">
+        <label>{{getQuestion(4).question}}</label>
+
+        <mat-radio-group formControlName="answer"> <br>
+          <mat-radio-button value=1>{{getQuestion(4).affirmation1}}</mat-radio-button> <br>
+          <mat-radio-button value=2>{{getQuestion(4).affirmation2}}</mat-radio-button> <br>
+          <mat-radio-button value=3>{{getQuestion(4).affirmation3}}</mat-radio-button> <br>
+        </mat-radio-group>
+
+
+        <button mat-button>NEXT</button> <button mat-button (click)="resetAll()">QUIT</button>
+      </form>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div *ngIf="inProgress == 5" class="center">
+  <mat-card class="card-quiz">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>Programming concepts</mat-card-title>
+      <mat-card-subtitle>You a Jedi!!!</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://media.tenor.com/images/90b5f3b9046af6fb8d32c82150cb05d9/tenor.gif"
+      alt="Photo from media.tenor.com">
+    <mat-card-content>
+      <p>
+        Congratulations, you have knowledge of Jedi!  
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="center">
+      <button mat-button (click)="resetAll()">RESTART THE GAME</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
